@@ -5,7 +5,8 @@ import humanizaNumeros from '../dist/index.js';
 describe('humanizaNumeros', function () {
   it('deve arredondar corretamente para cima', function () {
     expect(humanizaNumeros(1560, 1)).to.equal('1,6 Mil');
-    expect(humanizaNumeros(1451, 1)).to.equal('1,5 Mil');
+    expect(humanizaNumeros(1450, 1)).to.equal('1,5 Mil');
+    expect(humanizaNumeros(14550, 1)).to.equal('14,6 Mil');
   });
   it('deve arredondar corretamente para baixo', function () {
     expect(humanizaNumeros(1449, 1)).to.equal('1,4 Mil');
@@ -14,8 +15,8 @@ describe('humanizaNumeros', function () {
     expect(humanizaNumeros(1449, 1)).to.equal('1,4 Mil');
     expect(humanizaNumeros(1449, 2)).to.equal('1,45 Mil');
     expect(humanizaNumeros(1449, 3)).to.equal('1,449 Mil');
-    expect(humanizaNumeros(1449, 4)).to.equal('1,4490 Mil');
-    expect(humanizaNumeros(1449, 5)).to.equal('1,44900 Mil');
+    expect(humanizaNumeros(1449, 4)).to.equal('1,449 Mil');
+    expect(humanizaNumeros(1449, 5)).to.equal('1,449 Mil');
   });
   it('deve apresentar corretamente no singular', function () {
     expect(humanizaNumeros(1111111, 1)).to.equal('1,1 Milhão');

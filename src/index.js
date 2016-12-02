@@ -13,8 +13,9 @@ function humanizaNumeros(input, decimals = 0) {
   const divisor = Math.pow(10, 3 * indexEscala);
   const base = input / divisor;
   const escala = base <= 2 ? escalaCurta[indexEscala] : escalaCurta[indexEscala].replace('ão', 'ões');
+  const baseRound = Math.round(base * Math.pow(10, decimals)) / Math.pow(10, decimals);
 
-  return `${base.toFixed(decimals).replace('.', ',')} ${escala}`;
+  return `${baseRound.toString().replace('.', ',')} ${escala}`;
 }
 
 export default humanizaNumeros;
