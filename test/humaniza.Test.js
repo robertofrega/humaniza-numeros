@@ -39,10 +39,15 @@ describe('humanizaNumeros', function () {
   it('deve apresentar corretamente os trilhões', function () {
     expect(humanizaNumeros(1234567890000, 1)).to.equal('1,2 Trilhão');
   });
+  /**
+   * Proposta de features:
+   */
+  /*
   it('deve apresentar quatrilhões como milhares de trilhões', function () {
     expect(humanizaNumeros(1234567890000000, 1)).to.equal('1.234 Trilhões');
   });
   it('deve apresentar números muito grandes como notação científica', function () {
     expect(humanizaNumeros(1234567890000000000, 1)).to.equal('1.2x10^18');
   });
+  */
 });
