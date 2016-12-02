@@ -1,0 +1,46 @@
+{
+  "name": "humaniza-numeros",
+  "version": "0.0.0-development",
+  "description": "Transforma numeros grandes (12345678) em versões mais legíveis (12,3 Milhões).",
+  "main": "./dist/index.js",
+  "files": [
+    "./dis/"
+  ],
+  "scripts": {
+    "test": "npm run build && mocha --require babel-core/register --reporter spec",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "build": "babel src --out-dir dist",
+    "commitmsg": "validate-commit-msg",
+    "postmerge": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertofrega/humaniza-numeros.git"
+  },
+  "keywords": [
+    "number",
+    "portuguese",
+    "pt-br"
+  ],
+  "author": "https://github.com/robertofrega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertofrega/humaniza-numeros/issues"
+  },
+  "homepage": "https://github.com/robertofrega/humaniza-numeros#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "husky": "^0.11.9",
+    "mocha": "^3.2.0",
+    "semantic-release": "^6.3.2",
+    "validate-commit-msg": "^2.8.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
