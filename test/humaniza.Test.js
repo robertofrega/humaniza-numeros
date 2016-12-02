@@ -5,7 +5,7 @@ import humanizaNumeros from '../dist/index.js';
 describe('humanizaNumeros', function () {
   it('deve arredondar corretamente para cima', function () {
     expect(humanizaNumeros(1560, 1)).to.equal('1,6 Mil');
-    expect(humanizaNumeros(1450, 1)).to.equal('1,5 Mil');
+    expect(humanizaNumeros(1451, 1)).to.equal('1,5 Mil');
   });
   it('deve arredondar corretamente para baixo', function () {
     expect(humanizaNumeros(1449, 1)).to.equal('1,4 Mil');
