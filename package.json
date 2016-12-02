@@ -7,7 +7,7 @@
     "./dis/"
   ],
   "scripts": {
-    "test": "mocha --require babel-core/register --reporter spec",
+    "test": "npm run build && mocha --require babel-core/register --reporter spec",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "build": "babel src --out-dir dist"
   },
