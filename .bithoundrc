@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "unused-ignores": [
+      "validate-commit-msg",
+      "semantic-release",
+      "husky",
+      "babel-core",
+      "babel-cli",
+      "babel-preset-es2015"
+    ]
+  }
+}
