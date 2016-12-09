@@ -8,6 +8,14 @@ const escalaCurta = [
   'Quintilhão'
 ];
 
+/**
+ * Transforma números muito grandes em versões mais legíveis por humanos, de acordo com a escala utilizada no Brasil:
+ * `1234567` → `1,2 Milhão`
+ *
+ * @param {number} input Número a ser humanizado
+ * @param {number} decimals Número de casas decimais
+ * @returns {string} String representando o número humanizado em português do Brasil.
+ */
 function humanizaNumeros(input, decimals = 0) {
   const indexEscala = Math.ceil(input.toString().length / 3) - 1;
   const divisor = Math.pow(10, 3 * indexEscala);

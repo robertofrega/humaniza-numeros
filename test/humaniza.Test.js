@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
-import humanizaNumeros from '../dist/index.js';
+import humanizaNumeros from '../src/index.js';
 
 describe('humanizaNumeros', function () {
   it('deve arredondar corretamente para cima', function () {
