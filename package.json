@@ -4,7 +4,7 @@
   "description": "Transforma numeros grandes (12345678) em versões mais legíveis (12,3 Milhões).",
   "main": "./dist/index.js",
   "files": [
-    "./dis/"
+    "./dist/"
   ],
   "scripts": {
     "test": "npm run build && mocha --require babel-core/register --reporter spec",
