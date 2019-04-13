@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "test": "npm run build && mocha --require @babel/register --reporter spec",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "build": "babel src --out-dir dist"
   },
   "repository": {
