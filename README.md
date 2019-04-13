@@ -31,7 +31,7 @@ Arredonda o valor `input` com base no [`Math.round`](https://developer.mozilla.o
 
 Tipo: `number`
 
-Número a ser humanizado
+Número a ser humanizado 
 
 #### decimals
 
