@@ -1,7 +1,7 @@
 # humaniza-numeros
 
-[![Build Status](https://travis-ci.org/robertofrega/humaniza-numeros.svg?branch=master)](https://travis-ci.org/robertofrega/humaniza-numeros)
-[![Known Vulnerabilities](https://snyk.io/test/github/robertofrega/humaniza-numeros/badge.svg)](https://snyk.io/test/github/robertofrega/humaniza-numeros)
+[![Build Status](https://travis-ci.org/freguinhas/humaniza-numeros.svg?branch=master)](https://travis-ci.org/robertofrega/humaniza-numeros)
+[![Known Vulnerabilities](https://snyk.io/test/github/freguinhas/humaniza-numeros/badge.svg)](https://snyk.io/test/github/robertofrega/humaniza-numeros)
 
 > Transforma números muito grandes em versões mais legíveis por humanos, de acordo com a escala utilizada no Brasil: `1234567` → `1,2 Milhão`
 
